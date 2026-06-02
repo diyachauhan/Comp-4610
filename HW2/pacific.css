@@ -1,106 +1,125 @@
+/* HTML5 display settings */
 header, hgroup, nav, footer, figure, figcaption, aside, section, article {
-	display: block;
+display: block;
 }
 
+/* Body styling and background image */
 body {
-	background-color: #00569F;
-	background-image: url(ptrbackground.jpg);
-	background-repeat: repeat-x;
-	color: #666666;
-	font-family: Arial, Helvetica, sans-serif;
+background-color: #00569F;
+background-image: url(ptrbackground.jpg);
+background-repeat: repeat-x;
+color: #666666;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Main wrapper that centers the webpage */
 #wrapper {
-	width: 80%;
-	min-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #90C7E3;
+width: 80%;
+min-width: 600px;
+margin-left: auto;
+margin-right: auto;
+background-color: #90C7E3;
 }
 
+/* Header section with sunset background image */
 header {
-	background-color: #000033;
-	background-image: url(sunset.jpg);
-	background-repeat: no-repeat;
-	background-position: right;
-	color: #FFFFFF;
+background-color: #000033;
+background-image: url(sunset.jpg);
+background-repeat: no-repeat;
+background-position: right;
+color: #FFFFFF;
 }
 
+/* Main heading styling */
 h1 {
-	margin-bottom: 0;
-	padding: 10px;
+margin-bottom: 0;
+padding: 10px;
 }
 
+/* Navigation sidebar styling */
 nav {
-	float: left;
-	width: 160px;
-	font-weight: bold;
-	padding-top: 20px;
+float: left;
+width: 160px;
+font-weight: bold;
+padding-top: 20px;
 }
 
+/* Navigation list styling */
 nav ul {
-	font-size: 1.2em;
-	list-style-type: none;
-	padding-left: 20px;
-	margin: 0;
+font-size: 1.2em;
+list-style-type: none;
+padding-left: 20px;
+margin: 0;
 }
 
+/* Navigation link styling */
 nav a {
-	text-decoration: none;
-	color: #000033;
+text-decoration: none;
+color: #000033;
 }
 
+/* Visited link color */
 nav a:visited {
-	color: #344873;
+color: #344873;
 }
 
+/* Hover effect for navigation links */
 nav a:hover {
-	color: #FFFFFF;
+color: #FFFFFF;
 }
 
+/* Main content area styling */
 #content {
-	background-color: #FFFFFF;
-	margin-left: 190px;
-	padding: 20px;
+background-color: #FFFFFF;
+margin-left: 190px;
+padding: 20px;
 }
 
+/* Secondary heading color */
 h2 {
-	color: #3399CC;
+color: #3399CC;
 }
 
+/* Font styling for headings */
 h1,
 h2 {
-	font-family: Georgia, "Times New Roman", serif;
+font-family: Georgia, "Times New Roman", serif;
 }
 
+/* Resort name highlighted in blue */
 .resort {
-	color: #5C7FA3;
-	font-weight: bold;
+color: #5C7FA3;
+font-weight: bold;
 }
 
+/* Coast image floating to the left */
 #content img {
-	float: left;
-	margin-right: 30px;
-	margin-bottom: 20px;
+float: left;
+margin-right: 30px;
+margin-bottom: 20px;
 }
 
+/* Custom bullet image for unordered list */
 #content ul {
-	list-style-image: url(marker.gif);
+list-style-image: url(marker.gif);
 }
 
+/* Contact section font size */
 #contact {
-	font-size: 90%;
+font-size: 90%;
 }
 
+/* Definition term styling */
 dt {
-	color: #000033;
+color: #000033;
 }
 
+/* Footer styling */
 footer {
-	background-color: #FFFFFF;
-	font-size: 75%;
-	font-style: italic;
-	font-family: Georgia, "Times New Roman", serif;
-	padding: 20px;
-	margin-left: 190px;
+background-color: #FFFFFF;
+font-size: 75%;
+font-style: italic;
+font-family: Georgia, "Times New Roman", serif;
+padding: 20px;
+margin-left: 190px;
 }
