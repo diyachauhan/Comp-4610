@@ -1,1 +1,55 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW3 Multiplication Table</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+    Name: Diya Chauhan
+    Course: COMP 4610 GUI I
+    Assignment: HW3 JavaScript Multiplication Table
+    -->
+
+    <div class="container">
+
+        <h1>Dynamic Multiplication Table</h1>
+
+        <div class="form-box">
+
+            <label>Minimum Column Value</label>
+            <input type="number" id="minCol">
+
+            <label>Maximum Column Value</label>
+            <input type="number" id="maxCol">
+
+            <label>Minimum Row Value</label>
+            <input type="number" id="minRow">
+
+            <label>Maximum Row Value</label>
+            <input type="number" id="maxRow">
+
+            <button onclick="generateTable()">
+                Generate Table
+            </button>
+
+            <div id="error"></div>
+
+        </div>
+
+        <div id="tableContainer"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
