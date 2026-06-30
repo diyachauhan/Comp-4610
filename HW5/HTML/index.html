@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        Name: Diya Chauhan
+        Course: COMP 4610 GUI I
+        Assignment: Homework 5
+        Description:
+        One-Line Scrabble Game using jQuery UI
+    -->
+
+    <title>Scrabble Game</title>
+
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="../CSS/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--TITLE-->
+
+    <header>
+
+        <h1>SCRABBLE GAME</h1>
+
+    </header>
+
+    <!--SCOREBOARD-->
+
+    <section id="scoreBoard">
+
+        <div class="scoreCard">
+
+            <h3>Current Word</h3>
+
+            <p id="currentWord">---</p>
+
+        </div>
+
+        <div class="scoreCard">
+
+            <h3>Current Score</h3>
+
+            <p id="wordScore">0</p>
+
+        </div>
+
+        <div class="scoreCard">
+
+            <h3>Total Score</h3>
+
+            <p id="totalScore">0</p>
+
+        </div>
+
+        <div class="scoreCard">
+
+            <h3>Tiles Remaining</h3>
+
+            <p id="tilesRemaining">100</p>
+
+        </div>
+
+    </section>
+
+    <!-- BOARD-->
+
+<section id="gameArea">
+
+    <h2>Scrabble Board</h2>
+
+    <div id="boardContainer">
+
+        <img
+            src="../images/Scrabble_Board_OneLine.png"
+            id="boardImage"
+            alt="Scrabble Board">
+
+        <!-- Invisible drop layer -->
+        <div id="board">
+
+            <div class="boardSlot" data-position="0"></div>
+            <div class="boardSlot" data-position="1"></div>
+            <div class="boardSlot" data-position="2"></div>
+            <div class="boardSlot" data-position="3"></div>
+            <div class="boardSlot" data-position="4"></div>
+            <div class="boardSlot" data-position="5"></div>
+            <div class="boardSlot" data-position="6"></div>
+            <div class="boardSlot" data-position="7"></div>
+            <div class="boardSlot" data-position="8"></div>
+            <div class="boardSlot" data-position="9"></div>
+            <div class="boardSlot" data-position="10"></div>
+            <div class="boardSlot" data-position="11"></div>
+            <div class="boardSlot" data-position="12"></div>
+            <div class="boardSlot" data-position="13"></div>
+            <div class="boardSlot" data-position="14"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- TILE RACK -->
+
+    <section>
+
+        <h2>Your Tiles</h2>
+
+        <div id="rackContainer">
+
+            <img
+                src="../images/scrabble-tile-holder-406774_640.png"
+                id="rackImage"
+                alt="Tile Rack">
+
+            <div id="rackTiles">
+
+                <!-- Tiles added by JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BUTTONS -->
+
+    <section id="buttons">
+
+        <button id="submitBtn">
+
+            Submit Word
+
+        </button>
+
+        <button id="shuffleBtn">
+
+            Shuffle Rack
+
+        </button>
+
+        <button id="recallBtn">
+
+            Recall Tiles
+
+        </button>
+
+        <button id="restartBtn">
+
+            Restart Game
+
+        </button>
+
+    </section>
+
+    <!--MESSAGE -->
+
+    <section>
+
+        <p id="message">
+
+            Drag tiles from the rack to the Scrabble board.
+
+        </p>
+
+    </section>
+
+    <!-- LEGEND  -->
+
+    <section id="legend">
+
+        <h2>Bonus Squares</h2>
+
+        <div class="legendRow">
+
+            <div class="legendColor doubleLetter"></div>
+
+            <span>Double Letter</span>
+
+        </div>
+
+        <div class="legendRow">
+
+            <div class="legendColor tripleLetter"></div>
+
+            <span>Triple Letter</span>
+
+        </div>
+
+        <div class="legendRow">
+
+            <div class="legendColor doubleWord"></div>
+
+            <span>Double Word</span>
+
+        </div>
+
+        <div class="legendRow">
+
+            <div class="legendColor tripleWord"></div>
+
+            <span>Triple Word</span>
+
+        </div>
+
+    </section>
+
+</div>
+
+<!-- JAVASCRIPT -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+<script src="../JS/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+
+<script src="../JS/script.js"></script>
+
+</body>
+</html>
